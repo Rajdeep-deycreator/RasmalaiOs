@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(to bottom, #FFF0F0, #FFC5C5 , #FFF8DC);
+
+  color: white;
+  text-align: center;
+}
+
+.lock-screen {
+  padding-top: 40%;
+  
+}
+
+.time {
+  font-size: 48px;
+  
+}
+
+.date {
+  margin: 10px 0;
+}
+
+.swipe-up {
+  margin-top: 20px;
+  opacity: 0.6;
+  color: #0B0B0C;
+}
+
+.home-screen, .message-app {
+  padding: 20px;
+}
+
+.status-bar {
+  background: #222;
+  padding: 5px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.apps {
+  margin-top: 50px;
+}
+
+.app {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.special-message {
+  font-size: 18px;
+  color: pink;
+  margin-top: 30px;
+}
+h1{
+  position:fixed;
+  top:60%;
+  left:35%;
+  color:#B0B0B08A;
+}
+
+@keyframes aniunlock{
+  from{
+    transform: translateY(100%);
+    
+  }
+  to{
+    transform: translateY(-2000%);
+    
+  }
+}
+
+#loader{
+  height:100vh;
+  width: 100vw;
+}
+#pass{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(30vw,1fr));
+  gap:1vw;
+  
+  margin-top: 2%;
+
+
+}
+.pb{
+  height:50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 48px;
+  }
+  #tarea{
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    text-align: center;
+    letter-spacing: 50px;
+    margin-top: 95%;
+    font-size:20px;
+  }
