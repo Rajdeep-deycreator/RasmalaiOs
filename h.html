@@ -3,69 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Party Popper</title>
-    
+    <title>Apology</title>
     <style>
-    body {
-  margin: 0;
-  font-family: sans-serif;
-  background-image: linear-gradient(to bottom, #FFF0F0, #FFC5C5 , #FFF8DC);
-
-  color: white;
-  
-}
-        #message {
-         background-color: rgba(255, 255, 255, 0.35);
-         color: rgba(0, 0, 0, 1);
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
         }
         
-        .confetti {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #ff69b4;
-            border-radius: 50%;
-            animation: fall 2s infinite;
+        .apology {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: inline-block;
+            animation: slide-in 5s ease-out;
         }
         
-        @keyframes fall {
+        @keyframes slide-in {
             0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
                 transform: translateY(0);
                 opacity: 1;
             }
-            100% {
-                transform: translateY(100vh);
-                opacity: 0;
-            }
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        p {
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <div id=message><b>pyalii didiiii</b><p>apko nahi pata ap kitne special ho mere liye<br> explain toh mahi kr sakta ki kitna.....pr itna samjh lo ki sabse jada<br> recently jo kiya mene......wo agar ap bhul bhi gye ho...me nai bhul oa raha😅<br>bht bht sorry yrr....janta hu aone maaf kr diya....or me khud ko nai kr oa rha...jab meri waja se apko hurt hua...us din hyd me mera bura hall tha.....jabb baat kr rahe the tab bhi thira thora isiliye nikal gya....aur baaf me toh bht jada😅 mtlb explain nai kr sakta apko ki kya hua tha...pr dach bolu toh halth bht khrab tha.....<br>aur ha......thank you didiiii meri life me ne k liye...mukhe heal krne k liye....kuch log hote hai jo khion se bhi badh k hote hai...mere liye wo ap ho....aur sirf ap hi ho....aur ha janta hu bht kuch chal rah hoga apke life me abhi.....mujhe pata toh nahi ki exactly kya ..or itna jant hu ki bht stressed ho....thora space chiye akele rehna hai samjh rah hu....lekin kabhi kuch ulta fulta  altu faltu sochna ya krna mt.......apka bhai jumesha apkensath hai ...jada kuch agar nai kr oaya...atkest apka sath de.paunga jab jarurat ho...baat nahi hone ka mtlb ye nahi ki me fur ho jaunga....me humesha apka bhai hi rahunga...bs ap olz dir mt hi jana...okz.....<b> sab alag jarur ho jate hai</b>lekin agar hum koshish kre na toh satj bhi rehe sakte hai....air aone hi ek baar bola tha na <b> rishte tab tute hai jab dono me se koi ek thak jata hai ya donk tsk jate hai</b>i hope ye rishta na tute....air apke sath ho chal rah hai sab thik ho jayega....pray jarur karunga apke liye.....bhagwan ko maa radha ka kasam deke....ab dekhta hu kaise thil nai hota sab aur apka bhai humesh apke sat rahega che kuch bhi ho jaye...<br><b>Love you pyali didi ekdum dol se</b>ye web oage isiliye banaya kyunki.....mujhe bhi nai pata kyu😅lekinnthkra alag tarike se maafi mangne k liye aur khud ko express krne k liye.....<b> dil se love you pyali didi</b></p></div>
-    <script>
-        const popper = document.querySelector('.popper');
-        
-    
-            for (let i = 0; i < 400; i++) {
-                const confetti = document.createElement('div');
-                confetti.classList.add('confetti');
-                confetti.style.left = `${Math.random() * 100}%`;
-                confetti.style.top= "0px"
-                confetti.style.backgroundColor = getRandomColor();
-                confetti.style.animationDelay = `${Math.random() * 2}s`;
-                document.body.appendChild(confetti);
-                
-                setTimeout(() => {
-                    confetti.remove();
-                }, 2000);
-            }
-        
-        
-        function getRandomColor() {
-            const colors = ['#ff69b4', '#33cc33', '#6666cc', '#cc3333', '#ffff66'];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
-        
-    </script>
+    <div class="apology">
+        <h1>Sorry!</h1>
+        <p>na kabhi bura chaa...na krna chaa...na bolna chaa...ao bht samjhe mujhe....lekin meri harkate aisi hai ki me sab ko kho deta hu.</p>
+        <p>yaha tak ate ate me khud s ethak chuka hu...har chuka hau...ab aoko nai khima vhata....me khud ko maaf nai kr oa raha....an khud ko ab geal kr sakta hu me....ab nahi giha kuch ere <br> plz apko nai khona chata me olz  didi....aur koi mahi hai mer....na family me banta hai...na cousns k sath m..na dost k sath ...aur jada fost hai bhu mahi.....na sibling k sath....aur is point pe ao hi mere sache sibling sache dost sache family k darje oe ho.....jamta hu thora ajjeb lag sakta hai...lelin ab ye hi savh hai...autva jante ho sab.....olz apko nai khon achta olz..😭olz didi olz</p>
+    </div>
 </body>
 </html>
