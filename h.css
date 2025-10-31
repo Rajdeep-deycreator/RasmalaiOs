@@ -1,0 +1,78 @@
+html,body {
+    font-size: 15pt;
+    color: #FFFFFF;
+    background: linear-gradient( to  right, #FFC176,#FF3535 80%);
+    
+    max-height : 500px;
+}
+#heart{
+    position: fixed;
+    top: 10%;
+    
+    left: 15%;
+    font-size: 200px;
+
+    animation: beating 1s infinite alternate;
+}
+#loader{
+    background-color: #FFFFFF;
+    height: 7px;
+    
+}
+#innerloader{
+    background-color:#00F6FF;
+    height:7px;
+    width:0;
+    margin: 0;
+}
+@keyframes beating{
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 0.8;
+        
+    }
+}
+#mincon{
+    position :absolute;
+    top:100%;
+    
+}
+@keyframes rise{
+    75%{
+        top: 0%;
+    }
+    90%{
+        scale: 0.5;
+        top: 0%;
+    }
+    100%{
+        scale: 1;
+        top: 0%;
+    }
+}
+@keyframes pageup{
+    100%{
+      top:10%;
+    }
+}
+#text{
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 300%;
+    width: 95%;
+    border-radius: 10px;
+    color:#000000;
+    
+}
+h5{
+    text-align: center;
+    
+}
+
+@keyframes remove{
+    100%{
+        opacity : 0;
+    }
+}
